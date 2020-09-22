@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS5</title>
+        <style>
+            
+            p{font-style: italic;} /*이탤릭체로*/
+            p.txt{font-style:normal;}/* p 요소중 class=txt인 부분은 보통체로*/
+            
+            .accent{
+                font-variant:small-caps; /*작은 대문자*/
+                font-weight: bold; /*굵게*/
+                color : hotpink;
+                font-size: 25px;/*좆트 사이즈*/
+                
+                border: 5px solid greenyellow /*네모칸 만들기!!*/
+            }
+            .accent1{
+                color:red;
+                font-size:100px;
+                
+                border: 5px solid yellow /*네모칸 만들기!!*/
+            }
+            .accent2{
+                color:yellow;
+                font-size:50px;
+                border:5px solid pink;
+            }
+            aa{
+            border: 5px solid white /*네모칸 만들기!!*/
+            }
+            a{ text-decoration:none;
+            color: blue;
+            }
+            
+        </style>
+        <style>
+            ui{ font-size:30 px;}
+            .trans1{ text-transform:none;}
+            .trans2{ text-transform:capitalize;}
+            .trans3{ text-transform:uppercase;}
+            .trans4{ text-transform:lowercase;}
+            .trans5{ text-transform:full-width;}
+            
+            
+        </style>
+        <style>
+            h1{
+                font-size:100px;
+                font-family: "Arial Rounded MT";
+            }
+            .shadow1{
+                color:hotpink;
+                text-shadow:1px 1px;
+            }
+            .shadow2{
+                color:violet;
+                text-shadow:5px 5px;
+            }
+            .shadow3{
+                color:cornflowerblue;
+                text-shadow:-7px -7px 5px 
+            }
+        </style>
+        <style>
+            p1{ font-size:30px }
+            .content{
+                border:1px solid hotpink;
+                width: 300px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow:ellipsis;
+            }
+            .content:hover{
+                overflow:visible;
+            }
+        </style>
+        <style>
+        </style>
+    </head>
+    <body>
+        <h1><span class="accent1">여우</h1></span>
+        <h1><span class="accent2">메뉴판</h1></span>
+        <p><span class="accent" style="font:icon; text-decoration: underline">시드니스니(Sydney)</p></span>
+        <p><span class="accent" style="font:menu; text-decoration: overline">리우다 리우(Rio de Janeiro)</p></span>
+        <p class="txt" ><span class ="accent"style="caption; text-decoration:line-through" >나폴리(Naples)</p></span>
+        <p><span class="accent" style="font:small-caption; text-decoration:line-through" >리우다 리우(Rio de Janeiro)</p></span>
+        <p class="txt">[<a harf="https://www.fitbug.com/g/superfood-tomatoes">외부링크</a>]</p>
+    </body>
+    <body>
+        <h1>메뉴판2</h1>
+        <ul>
+            <li class="trans1">alpha</li>
+            <li class="trans2">beta</li>
+            <li class="trans3">gamma</li>
+            <li class="trans4">delta</li>
+            <li class="trans5">epsilon</li>
+        </ul>
+    </body>
+    <body>
+        <h1 class="shadow1">alpha</h1>
+        <h1 class="shadow2">beta</h1>
+        <h1 class="shadow3">gamma</h1>
+    </body>
+    <body>
+        <p1 class="content">본인이 하고싶은 일을 할 것 </p1>
+    </body>
+</html>

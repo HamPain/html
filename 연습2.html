@@ -1,0 +1,88 @@
+﻿<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+        table {border: 2px solid black; border-collapse: collapse;}
+        th,td  {width: 110px; text-align: center; border:  1px solid; 	padding: 5px;}
+        form{ width: 480px;}
+        form fieldset {margin-bottom:25px;}
+        form legend { font-size:15px; font-weight:bold;}
+        label.reg{
+        font-size:14px; width:110px;color:#390; font-weight:bold; 
+        float: left ; text-align:right;margin-right:10px;
+        }
+        form ul li{ list-style:none; margin:15px 0; font-size:14px;}
+        </style>
+        <title>시험</title>
+    </head>
+    <body>   
+        <h1>여름방학 특강 안내</h1>
+        <table border="1">
+            <tr>
+                <th>특강과목</th>
+                <td>기간</td>
+                <td>수강료</td>
+                <td>세부내용보기</td>
+            </tr>
+            <tr>
+                <th>영어문법</th>
+                <td>1개월</td>
+                <td>200.000원</td>
+                <td><img src="images/view_detail.gif"></td>
+            </tr>
+            <tr>
+                <th>영어화화</th>
+                <td>2개월</td>
+                <td>400.000원</td>
+                <td><img src="images/view_detail.gif"></td>
+            </tr>
+            <tr>
+                <th>PYTHON</th>
+                <td>1개월</td>
+                <td>200.000원</td>
+                <td><img src="images/view_detail.gif"></td>
+            </tr>
+            <tr>
+                <th>마케팅</th>
+                <td>1개월</td>
+                <td>200.000원</td>
+                <td><img src="images/view_detail.gif"></td>
+            </tr>
+        </table>
+       <h1>여름방학 특강 신청 </h1>
+       <form>
+           <fieldset>
+               <legend>수강 신청인</legend>
+               <ul>
+                <li><label class="reg" for="tel" required >학번</label>
+                <label><input type="tel"></label>
+                </li>
+                <li><label class="reg" for="name" required >이름</label>
+                <label><input type="name"></label>
+
+                </li>
+                
+                <label class="reg" for="class">학과</label>
+                <select size="1" id="class">
+                    <option value="manage">전기전자공학과</option>
+                    <option value="speakig">기계공학과</option>
+                    <option value="programming">건축공학과</option>
+                    <option value="manage">컴퓨터공학과</option>
+                </select>
+           </fieldset>
+           <fieldset>
+                
+               <legend>수강 과목을 선택하세요</legend>
+               <ul>
+                <li><label for="text3-"class="reg" aria-placeholder="수강과목을 선택하세요">수강과목</label>
+                    <textarea name="text" id="text" cols="10" rows="1"></textarea>
+                </ul>
+            </select>
+        
+       </fieldset>
+       <input type="submit" value="접수하기">
+       <input type="reset" value="다시 보기">
+       </form>
+    </body>
+</html>

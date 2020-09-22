@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>폼 관련 태그 만들기</title>
+</head>
+<body>
+        <h1>폼 관련 태그 만들기</h1>
+        <form action="search.php" method="post">
+            <input type="test" title="검색">
+            <input type="submit"value="검색">
+    
+        </form>
+    </body>
+<body>
+    
+    <form>
+        <label>아이디 (6자 이상)<input type="text")></label><br><br>
+
+        <label for="user-id">아이디 (6자 이상)</label>
+        <input type="text" id="user-id"><br><br>
+
+        <label> 아이디 (6자 이상)</label>
+        <input type="text">
+    </form>
+</body>
+
+<body>
+    <h1>회원가입 신청서</h1>
+    <form>
+        <fieldset>
+            <legend>로그인 정보</legend>
+            <ul>
+                <li>
+                    <label for="user-id">아이디</label>
+                    <input type="text"id=user-id value="아이디">
+                </li>
+                <li>
+                    <label for="password">비밀번호</label>
+                    <input type="password"id=password value="비밀번호">
+                </li>
+                <li>
+                    <label for="password1">비밀번호 확인</label>
+                    <input type="password1"id=password1 value="비밀번호 확인">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>개인정보</legend>
+            <ul>
+                    <li>
+                        <label for="name">이름</label>
+                        <input type="text" id="name"value="이름">
+                    </li>
+                    <li>
+                        <label for="mail">메일주소</label>
+                        <input type="mail" id="mail"value="메일주소">
+                    </li>
+                    <li>
+                        <label for="phone">연락처</label>
+                        <input type="phone"id="phone"value="연락처">
+                    </li>
+                    <li>
+                        <label for="homep">블로그/홈페이지</label>
+                        <input type="homep"id="homep"value="블로그/홈페이지">
+                    </li>
+                </ul>
+        </fieldset>
+        <input type="submit"value="가입하기">
+
+    </form>
+</body>
+<body>
+    <fieldset>
+        <legend>등록정보</legend>
+        <ul>
+            <li>
+                <label for="member">인원<small>(최대 10명)</small></label>
+                <input type="member"id="member"value="1" min="0" max="10" step="1">
+            </li>
+            <li>
+                <label for="stuffs">지원물품<small>(1인당 5개)</small></label>
+                <input type="stuffs"id="stuffs"value="1" min="0" max="50" step="5"size="5">
+            </li>
+            <li>
+                    <label for="satis">희망 단계<small>(하,중,상)</small></label>
+                    <input type="range"id="satis"value="1" min="1" max="3" >
+            </li>
+        </ul>
+    </fieldset>
+</body>
+<body>
+    <fieldset>
+        <legend>신청과목</legend>
+        <p>이 달에 신청할 과목을 선택하세요 (1과목만 선택가능)</p>
+        <label><input type="radio"name="subject"value="speaking">회화</label>
+        <label><input type="radio"name="subject"value="grammer">문법</label>
+        <label><input type="radio"name="subject"value="writting">작문</label>
+    </fieldset>
+    <fieldset>
+        <legend>메일링</legend>
+        <p>메일로 받고 싶은 뉴스 주제를 선택해 주세요 (복수선택가능)</p>
+        <label><input type="checkbox"name="mailing1"value="news">해외단신</label>
+        <label><input type="checkbox"name="mailing2"value="dialog"checked>5분 회화</label>
+        <label><input type="checkbox"name="mailing3"value="pops">모닝팝스</label>
+    </fieldset>
+</body>
+
+<body>
+        <h1>조회기간 선택</h1>
+        <label>날짜<input type="date"id="start"></label><br>
+        <label>월<input type="month"id="end"></label><br>
+        <label>일<input type="week"id="week"></label><br>
+        <label>시간<input type="time"id="time"></label><br>
+        <label>로컬 시간<input type="datetime-local"></label><br>
+</body>
+<body>
+    <form action="register.php"method="post">
+        <label>메일주소<input type="text"></label>
+        <input type="submit"value="제줄">
+        <input type="reset"value="다시입력">
+    </form>
+    <form name=login>
+        <label>아이디<input type="text"size="15"></label>
+        <label>비밀번호<input type="password"size="15"></label>
+        <input type="image"id="butt" src ="images/login.jpg" alt="login">
+    </form>
+</body>
+<body>
+    <label for="uname">이름</label>
+    <input type="text" id="uname"autofocus><br><br>
+</body>
+<body>
+     <label for="uid">전화번호</label>
+     <input type="text" id="uid"placeholder="하이폰없이 입력"><br><br>
+     <label for="uid">전화번호</label>
+     <input type="text" id="uid"value="010-4444-4444"readonly><br><br>
+     
+    
+<body>
+</body>
+        <label for="uid">전화번호</label>
+        <input type="text" id="uid"value="010-2222-2222"readonly><br><br>
+        <label class="reg" for="name">이름</label>
+        <input type="text" id="uname"autofocus required><br><br>
+        <label for="group">단체주문</label>
+        <input type="number"id="group" value="10" min="10" max="100" step="10"><br><br>
+        <label for="uid">학번</label>
+        <input type="text"id="uid" placeholder="하이폰없이 입력" maxlength="8"required><br><br>
+        <input type="submit"value="확인">
+</body>
+<body>
+    <form>
+     <select id="class">
+     <option value="archi">건축공학과</option>
+     <option value="mechanic">기계공학과</option>
+     <option value="indust">산업공학과</option>
+     <option value="elec">전기전자공학과</option>
+     <option value="computer">컴퓨터공학과</option>
+     <option value="chemical">화학공학과</option>
+     </select>
+     <input type="submit"value="확인">
+    </form>
+</body>
+<body>
+    <form>
+        <select id="class">
+           <optgroup label="공과대학">
+                <option value="archi">건축공학과</option>
+                <option value="mechanic">기계공학과</option>
+             <option value="indust">산업공학과</option>
+         <option value="elec">전기전자공학과</option>
+      <option value="computer">컴퓨터공학과</option>
+      <option value="chemical">화학공학과</option>
+    </optgroup>
+      <optgroup label="인문대학">
+      <option value="history">사학과</option>
+      <option value="iang">어문학부</option>
+      <option value="philo">철학</option>
+        </select>
+    </optgroup>
+    </form>
+</body>
+<body>
+    <form>
+        <input type="text"id="interest"list="choices">
+        <datalist id="choices">
+            <option value="grammer"><label ="문법"></option>
+            <option value="voca"><label ="어휘"></option>
+          <option value="speaking"><label ="회화"></option>    
+             <option value="listening"><label ="리스닝"></option>
+            <option value="news"><label ="뉴스청취"></option>
+            </datalist>
+    </form>
+</body>
+<body>
+    <form>
+        <input type="submit"value="전송하기"><br>
+        <button type="submit">전송하기</button>
+    </form>
+</body>
+<body>
+    <form oninput="result.value=parseInt(num1.value)+parseInt(num2.value)"> 
+        <input type="number"name="num1"value="0">
+        +<input type="number"name="num2"value="0">
+        =<output name="result"for="num"></output>
+    </form>
+</body>
+<body>
+        <label>10초남음</label>
+        <progress value="50" max="60"></progress>
+        <label>진행률 30%</label>
+        <progress value="30" max="100"></progress>
+</body>
+<body><br><br>
+    <label>점유율 0.8</label>
+    <meter value="0.8"></meter><br>
+
+    <label>사용량 64%</label>
+    <meter min="0" max="100" value="64"></meter><br>
+
+    <label>트래픽 초과</label>
+    <meter min="1024" max="10240" low="2048"high="8192"value="9216"></meter><br>
+
+    <label>적절한 트래픽</label>
+    <meter value="0.5" optimum="0.8"></meter>
+</body>
+</html>

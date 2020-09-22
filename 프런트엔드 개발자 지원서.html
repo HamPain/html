@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>프런트엔드 개발자 지원서</title>
+    <style>
+        #container { width: 550px; border: 1px solid black;
+        padding: 20px 40px; margin: auto;}
+        ul { list-style-type: none;}
+        li { line-height: 30px;}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>프런트엔드 개발자 지원서</h1>
+        <p1>HTML,CSS,javascript에 대한 기술적 경험이 있는 분을 찾습니다.</p1><hr>
+
+    <form action="register.php">
+        <p><strong>개인정보</strong></p>
+        <ul>
+        <li><label for="name">이름</label>
+        <input type="text" id="name" placeholder="공백 없이 입력하세요" autofocus required> 
+        </li><li><label for="phonenum">연락처</label>
+        <input type="tel" id="phonenum" required><br></li>
+        </ul>
+        <p><strong>지원 분야</strong></p>
+        <ul>
+            <li><label><input type="radio" name="fe" value="m">웹 퍼블리싱</label></li>
+            <li><label><input type="radio" name="fe" value="m">웹 애플리케이션 개발</label></li>
+            <li><label><input type="radio" name="fe" value="m">개발 환경 개선</label></li>
+        </ul>
+        <p><strong>지원동기</strong></p>
+       <label for="memo" id="motivate"></label>
+        <textarea cols="60" rows="5" id="motivate" required placeholder="본사 지원동기를 간략히 써 주세요."></textarea><br>
+         <input type="submit" value="접수하기">
+        <input type="reset" value="다시하기">
+    </form>
+    </div>
+</body>
+</html>

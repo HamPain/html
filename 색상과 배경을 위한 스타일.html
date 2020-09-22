@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>색상과 배경을 위한 스타일</title>
+        <style>
+            .div1{ width: 500px ; height: 400px; }
+            .bg12{ background:linear-gradient( to right bottom , blue , white);}
+            .bg13{ background:linear-gradient( 45deg, #ff0000, white);}
+            .bg14{ background:linear-gradient( to bottom, rgb(255, 0, 157), white 30%,hotpink)} 
+            .grad1{ background:radial-gradient( circle, hotpink,red,green);}
+            .grad2{ background:blue;}
+            .grad3{ background: linear-gradien0d(yellow , yellow 20px, red 20px, red 40px); }
+            background:radial-gradient(circle at 50% 20% , white, blue)}           
+            body {
+                background-image:url('images/bg3.jpg') no-repeat ,right, bottom ,scroll;
+               
+            }
+            div{
+                background-color: rgb(53, 155, 250);
+                width: 90%; height: 300px;
+                padding: 15px;
+                border: 15px solid greenyellow;
+                margin-bottom: 20px;
+                
+            }
+            .bg1{background-clip: border-box; background-image:url('images/bg2.jpg');
+                background-repeat:no-repeat;
+                background-position: left top;
+                padding-top: 150px;
+                background-origin: border-box;}
+            .bg2{background-clip: padding-box; background-repeat: no-repeat;
+                background-image:url('images/bg2.jpg');
+            background-position: left top;
+            background-origin: border-box}
+            .bg3{background-clip: content-box; }
+            
+        p{
+           
+         line-height: 30px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="bg1">
+            <h1>민트초코아이스크림</h1>
+            <p>
+               민트초코아이스크림
+            </p>
+        </div>
+        <div class="bg2">
+                <h1>엄마는 외계인</h1>
+                <p>
+                    엄마는 외계인
+                </p>
+        </div>
+        <div class="bg3">
+                <h1>블랙소보레</h1>
+                <p> 
+                    블랙소보레
+                </p>
+        </div>
+        <div class="bg12">
+
+        </div>
+        <div class="bg13">
+
+        </div>
+        <div class="bg14">
+
+        </div>
+        <div class="grad1"> 
+
+        </div>
+        <div class="grad2">
+
+        </div>
+        
+    </body>
+</html>
